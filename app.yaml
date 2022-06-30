@@ -1,0 +1,12 @@
+runtime: nodejs16
+
+env_variables:
+  LOOKERSDK_BASE_URL:
+  # LOOKERSDK_VERIFY_SSL: false
+  # SERVER_PORT: 8088
+
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+    redirect_http_response_code: 301
